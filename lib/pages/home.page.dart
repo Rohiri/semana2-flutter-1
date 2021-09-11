@@ -66,78 +66,23 @@ class _HomePageState extends State<HomePage> {
                     button(text: ")", method: (){}, color: Colors.black54),
                   ]),
                   Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                    button(text: "÷", method: (){}, color: Colors.black54),
-                    button(text: "÷", method: (){}, color: Colors.black54),
-                    ElevatedButton(
-                      onPressed: (){},
-                      child: Text("3"),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(Colors.black54),
-                      ),
-                    ),
-                    ElevatedButton(
-                      onPressed: (){},
-                      child: Text("-"),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(Colors.black54),
-                      ),
-                    ),
-                    ElevatedButton(
-                      onPressed: (){},
-                      child: Text("x2"),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(Colors.black54),
-                      ),
-                    ),
-                    ElevatedButton(
-                      onPressed: (){},
-                      child: Text("√"),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(Colors.black54),
-                      ),
-                    ),
+                    button(text: "3", method: (){}, color: Colors.black54),
+                    button(text: "2", method: (){}, color: Colors.black54),
+                    button(text: "1", method: (){}, color: Colors.black54),
+                    button(text: "-", method: (){}, color: Colors.black54),
+                    button(text: "sqrt", method: (){}, color: Colors.black54),
+                    button(text: "√", method: (){}, color: Colors.black54),
                   ]),
                   Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                    Expanded(flex:1, child: ElevatedButton(
-                      onPressed: (){},
-                      child: Text("0"),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(Colors.black54),
-                      ),
-                    ),),
-                    Expanded(flex:1, child: ElevatedButton(
-                      onPressed: (){},
-                      child: Text("1"),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(Colors.black54),
-                      ),
-                    ),),
-                    Expanded(flex:1, child: ElevatedButton(
-                      onPressed: (){},
-                      child: Text("2"),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(Colors.black54),
-                      ),
-                    ),),
-                    Expanded(flex:1, child: ElevatedButton(
-                      onPressed: (){},
-                      child: Text("+"),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(Colors.black54),
-                      ),
-                    ),),
-                    Expanded(flex:2, child: ElevatedButton(
-                      onPressed: (){},
-                      child: Text("="),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(Colors.green),
-                      ),
-                    ),),
+                    button(text: "0", method: (){}, color: Colors.black54),
+                    button(text: "1", method: (){}, color: Colors.black54),
+                    button(text: "2", method: (){}, color: Colors.black54),
+                    button(text: "+", method: (){}, color: Colors.black54),
+                    button(text: "=", method: (){}, flexValue:2 ,color: Colors.black54),
                   ]),
                 ],
               ),
               color: Colors.white10,
-              height: 200,
           ),),
         ]
       )

@@ -20,15 +20,15 @@ class _HomePageState extends State<HomePage> {
     setState(() => inputCalculator += text);
   }
 
-  void allClear(String text) {
+  void removeLast(String text) {
     setState(() {
-      history = '';
-      inputCalculator = '';
+      inputCalculator = inputCalculator.substring(0,inputCalculator.length-1);
     });
   }
 
   void clear(String text) {
     setState(() {
+      history = '';
       inputCalculator = '';
     });
   }
@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                     button(text: Text("8"), method: (){this.buttonClick('8');}, color: Colors.black54),
                     button(text: Text("7"), method: (){this.buttonClick('7');}, color: Colors.black54),
                     button(text: Text("÷"), method: (){this.buttonClick('%');}, color: Colors.black54),
-                    button(text: Icon(Icons.arrow_back_outlined), method: (){}, color: Colors.black54),
+                    button(text: Icon(Icons.arrow_back_outlined), method: (){this.removeLast('<-');}, color: Colors.black54),
                     button(text: Text("C"), method: (){this.clear('%');}, color: Colors.black54),
                   ]),
                   Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
